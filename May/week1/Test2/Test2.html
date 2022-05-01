@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Flex-box Test</title>
+        <style>
+            #container{
+                width: 100%;
+                height: 60%;
+                background-color: red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 20px;
+            }
+
+            #box1, #box2, #box3{
+                background-color: green;
+                width: 300px;
+                height: 90px;
+                display: flex;
+            }
+
+            #c1, #c2, #c3{
+                margin: 0;
+            }
+
+            #box2{
+                align-items: center;
+            }
+
+            #box3{
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="box1">
+                <h3 id="c1">Child1</h3>
+            </div>
+
+            <div id="box2">
+                <h3 id="c2">Child2</h3>
+            </div>
+
+            <div id="box3">
+                <h3 id="c3">Child3</h3>
+            </div>
+        </div>
+    </body>
+</html>
